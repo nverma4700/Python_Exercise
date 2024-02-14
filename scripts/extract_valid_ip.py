@@ -46,7 +46,7 @@ def valid_ips(str):
     return extracted_ip
 
     
-# Testing:
+# Testing: --> Uncomment below
 # str = '''ip access-list 100 10 permit ip host 102.300.1.1 any
 # ip access-list 100 20 permit ip host 102.100.1.2 any
 # ip access-list 100 30 permit ip host 102.100.1.3 any'''

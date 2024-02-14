@@ -16,8 +16,7 @@ def majority_element(nums):
     return 'No element with occurrence equal or more than n/2 found in the given list.'
 
 
-
-# Testing:
+# Testing:--> Uncomment below
 # if __name__ == '__main__':
 #     nums1 = [1, 2, 2, 3, 4, 4, 4, 5, 4, 4, 4, 4]
 #     nums2 = [1, 2, 2, 3, 4, 4, 4, 5]

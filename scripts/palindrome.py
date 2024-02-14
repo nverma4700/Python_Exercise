@@ -10,7 +10,7 @@ def palindrome(string):
         return f'String: {string} is not a palindrome'
 
 
-#Testing:
+#Testing: --> Uncomment below
 # if __name__ == "__main__":
 #     str1 = "hello"
 #     str2 = "madam"
