@@ -3,7 +3,9 @@ def palindrome(string):
     Check and return if the string is palidromw or not
     '''
     x = string
-    y = string[::-1]
+    # Below will return an inverse of a string.
+    # Ex: x = 'hello', y will be 'olleh'
+    y = string[::-1] # similar to [-1::-1] --> Will start from the last index with a hop of -ve 1
     if x == y:
         return f'String: {string} is a palindrome'
     else:
