@@ -22,7 +22,7 @@ def buy_sell_stock(prices):
         return f'Profit: {highest_price-lowest_price}, Day Buy: {lowest_price_day}, Day Sell: {highest_price_day}'
 
 #Testing: --> uncomment below
-# prices1 = [7,1,5,3,6,4]
-# prices2 = [7,6,4,3,1]
-# print(buy_sell_stock(prices=prices1))
-# print(buy_sell_stock(prices=prices2))
+prices1 = [7,1,5,3,6,1]
+prices2 = [7,6,4,3,1]
+print(buy_sell_stock(prices=prices1))
+print(buy_sell_stock(prices=prices2))
