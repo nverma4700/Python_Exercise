@@ -18,7 +18,7 @@ Akriti
 Harsh
 39
 '''
-
+#Logic 1: With for loop and sort list using lambda function
 
 if __name__ == '__main__':
     student_list = []
@@ -41,5 +41,20 @@ if __name__ == '__main__':
             second_lowest_score_list.append(i)
     sorted_second_lowest_score_list = sorted(second_lowest_score_list, key=lambda x:x[0])
     
-    for i in sorted_second_lowest_score_list:
-        print(i[0])
+    for student in sorted_second_lowest_score_list:
+        print(student[0])
+
+#Logic 2: With sorted sets and list comprehension
+if __name__ == '__main__':
+    student_list = []
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        student_list.append([name, score])
+    
+    grades = sorted({student[1] for student in student_list})
+    second_lowest_grade = grades[1]
+    student_with_second_lowest_grade = [student[0] for student in student_list if student[1] == second_lowest_grade]
+    student_with_second_lowest_grade.sort()
+    for student in student_with_second_lowest_grade:
+        print(student)
