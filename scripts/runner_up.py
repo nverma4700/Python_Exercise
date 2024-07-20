@@ -7,7 +7,7 @@
 
 if __name__ == '__main__':
     score = input('Enter the score: ')
-    arr = list(map(int, input().split()))
+    arr = list(map(int, score.split()))
     sorted_arr = sorted(arr, reverse=True)
     if len(arr) > 2:
         for i in range(len(arr) -1):
@@ -16,10 +16,10 @@ if __name__ == '__main__':
                 break
         if runner_up:
             print(runner_up)
-        else: 
+        else:
             print('Runner up not found')
     else:
-        print('Length of score list is not sufficient to find the runnerup')
+        print('Length of score list is not sufficient to find the runner-up')
 
 
         
