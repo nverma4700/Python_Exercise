@@ -1,25 +1,20 @@
-def check_string_binary(str):
-    '''
-    Check wheather a given string is binary and return True or False
-    '''
-    binary = '01'
+str_list = ["GeekforGeeks!", "1111111", "001021010001010", "000000000"]
+
+def check_if_string_is_binary(str):
+    binary = "01"
     count = 0
-    for i in str: 
+    for i in str:
         if i not in binary:
             count += 1
-            break
-    if count:
+    if count > 0:
         return False
     else:
         return True
-    
 
-# Testing: --> uncomment below:
-# str1 = 'GeekforGeeks!'
-# str2 = "1111111"
-# str3 = "001021010001010"
-# str4 = "000000000"
-# print(check_string_binary(str1))
-# print(check_string_binary(str2))
-# print(check_string_binary(str3))
-# print(check_string_binary(str4))
+if __name__ == "__main__":
+    str_list = ["GeekforGeeks!", "1111111", "001021010001010", "000000000"]
+    for str in str_list:
+        if check_if_string_is_binary(str):
+            print(f"{str} is Binary")
+        else:
+            print(f"{str} is Not Binary")
