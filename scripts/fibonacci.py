@@ -6,5 +6,5 @@ def fibonacci(n):
     return fab_list
 
 
-# Testing: --> uncomment below
-# print(fibonacci(10))
+#Testing: --> uncomment below
+print(fibonacci(10))

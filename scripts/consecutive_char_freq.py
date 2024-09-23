@@ -16,5 +16,5 @@ def consecutive_char_freq(string):
 
 
 # Testing: --> uncomment below:
-# string = "geekksforgggeeks"
-# print(consecutive_char_freq(string))
+string = "geekksforgggeeks"
+print(consecutive_char_freq(string))
